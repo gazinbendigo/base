@@ -1,12 +1,5 @@
-.DS_Store
-.meteor/local
-settings-development.json
-settings-production.json
-npm-debug.log
-.editorconfig
-.eslintrc.js
-
 node_modules
+.meteor/local
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
@@ -81,3 +74,28 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+.editorconfig
+.eslintrc.js
+.jshintrc
+both/methods/insert/collection.js
+both/methods/read/
+both/methods/remove/collection.js
+both/methods/update/collection.js
+both/modules/
+client/helpers/template.js
+client/modules/_modules.js
+client/modules/startup.js
+client/stylesheets/components/
+client/stylesheets/objects/
+client/stylesheets/tools/
+collections/collection.js
+packages.json
+packages/
+private/email/
+server/admin/
+server/modules/_modules.js
+server/modules/generate-accounts.js
+server/modules/set-environment-variables.js
+server/modules/startup.js
+server/publications/template.js
+settings-development.json

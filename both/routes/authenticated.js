@@ -1,4 +1,13 @@
-const authenticatedRoutes = FlowRouter.group( { name: 'authenticated' } );
+const authenticatedRedirect = () => {
+  if ( !Meteor.loggingIn() && !Meteor.userId() ) {
+    FlowRouter.go( 'login' );
+  }
+};
+
+const authenticatedRoutes = FlowRouter.group({
+  name: 'authenticated',
+  triggersEnter: [ authenticatedRedirect ]
+});
 
 authenticatedRoutes.route( '/', {
   name: 'index',

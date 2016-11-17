@@ -1,7 +1,5 @@
-@import "extends";
+@import "tools/extends";
 
-@import "base/animations";
-@import "base/forms";
+@import "objects/forms";
 
-@import "module/loading";
-@import "module/login";
+@import "components/login";

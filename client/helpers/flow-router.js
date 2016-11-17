@@ -1,4 +1,4 @@
-const pathFor = ( path, view ) => {
+let pathFor = ( path, view ) => {
   if ( path.hash ) {
     view = path;
     path = view.hash.route;
